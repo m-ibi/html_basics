@@ -1,0 +1,181 @@
+body{
+    margin: 0;
+    background: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:400px ;
+
+}
+
+.topnav{
+font-size: larger;
+width: 70%;
+margin: 0 auto;
+text-align: left;
+
+}
+
+header{
+    background: rgb(255, 255, 255);
+
+}
+header::after{
+    content:'' ;
+    display:table;
+    clear: both;
+}
+
+
+.logo{
+    float: left;
+    padding: 10px 0;
+}
+
+nav{
+    float:right;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+nav ul li a {
+    color: black;
+}
+
+nav li{
+ display: inline-block;
+ margin-left: 45px ;
+ padding-top: 23px;
+ position: relative;
+}
+
+
+nav a{
+  color:dark grey ;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14;
+
+}
+
+nav a:hover{
+color: rgb(48, 47, 47);
+}
+
+
+nav a ::before{
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: rgb(227, 132, 36);
+    position: absolute;
+    top: 0;
+    width: 0%;
+     transition: all ease-in-out 1000ms;
+}
+
+nav a :hover ::before{
+ width: 100%;
+
+
+}
+
+
+.img1 img{
+    margin-bottom: 190 px;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.column {
+    color: rgb(80, 85, 85);
+    margin-top: 100px;
+    font-size: 2vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+    column-width: 100;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+  .column img{
+    margin-right:40px ;
+    float:right;
+    margin-top: 5px;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+ 
+  
+  .img2 img{
+
+    margin-top: 40px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+  .imgpr img{
+
+    margin-top: 3px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .column1 {
+    color: rgb(80, 85, 85);
+    margin-top: 110px;
+    font-size: 1.5vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    float: left;
+    width: 50%;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column1 img{
+    margin-right:40px ;
+    float:right;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+.interveiw{
+
+  border-bottom-color: solid gray;
+  border-width: 2px;
+
+}

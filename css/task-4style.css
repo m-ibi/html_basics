@@ -1,0 +1,87 @@
+body{
+    background-image: url(../images/bg.jpg);
+    background-position: center;
+}
+h2 {
+    text-align: center;  
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+.parent{
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thumbContainer { 
+    text-align: center;
+    margin: 120px ;
+    width: 20%;
+    float:left ;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.thumbContainer:hover{
+    background-color: rgb(170, 156, 15);
+}
+
+.thumbContainer img{
+      display: block;
+     
+    
+  }
+  .thumbContainer img{
+     display: inline-block; 
+  }
+  .textdiv{
+      text-align: center;
+  }
+
+
+
+
+
+
+  *{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing:border-box ;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+   color: white;
+   font-size: 35px;
+   line-height: 80px;
+   padding:0 100px ;
+   font-weight: bold; 
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display:inline-block ;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+a.active,a:hover{
+    background: #1b9bff ;
+    transition: 0.5s;
+}
