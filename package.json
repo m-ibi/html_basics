@@ -1,0 +1,29 @@
+{
+  "name": "html_basics",
+  "version": "1.0.0",
+  "description": "basic html",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-ibi/html_basics.git"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "bootstrap",
+    "javascript",
+    "jq"
+  ],
+  "author": "ibi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-ibi/html_basics/issues"
+  },
+  "homepage": "https://github.com/m-ibi/html_basics#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
