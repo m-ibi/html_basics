@@ -39,3 +39,6 @@ var ctx = cnv.getContext("2d" ) ;
 
 
    }
+   document.getElementById('clear').addEventListener('click', function () {
+    ctx.clearRect(0, 0, grid.width, grid.height);
+}, false);
