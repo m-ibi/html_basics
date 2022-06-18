@@ -1,0 +1,20 @@
+#container div{
+
+    height:12.5%;
+    width: 25%;
+    background-color: black;  
+    margin-bottom: 0px;
+    margin-top: 100px;
+    display: inline-block;
+    float: right;
+    max-width: 100%;  
+}
+ 
+  #genNew {
+    position: relative;
+    top: 50%;
+}
+ 
+.wrapper {
+    text-align: center;
+}
