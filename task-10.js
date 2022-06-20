@@ -52,10 +52,8 @@ function create() {
 //  Opacity
     ctx.globalAlpha=0.7;
     var color = '#'+ Math.round(0xffffff * Math.random()).toString(16);
-    ctx.fillStyle = color;
-
-    //Each rectangle's size is (20 ~ 100, 20 ~ 100)     
-    ctx.fillRect(Math.random()*canvas.width, Math.random()*canvas.width, Math.random()*80+20, Math.random()*80+20);
+    ctx.fillStyle = color;     
+    ctx.fillRect(Math.random()*grid.width, Math.random()*grid.width, Math.random()*80+20, Math.random()*80+20);
 
 }
  document.getElementById('buttonxD').addEventListener('click', create);
