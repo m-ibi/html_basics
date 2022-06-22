@@ -1,7 +1,6 @@
 var cnv=document.getElementById("grid");
 var ctx = cnv.getContext("2d" ) ;
 
-//hello im wasting time because im already done with work hahaah im a straight up villain is it a reallly a surprise a if im playing with your mind 
  //small units
 
   for(var i=5; i<605; i=i+6)
