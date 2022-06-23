@@ -120,24 +120,77 @@ docReady(function() {
 // });
 
 // op2 (better because function with name is separate thing)
-window.addEventListener('keydown', checkKeyPress,false);
 
-function checkKeyPress(key){
-    console.log(key);
-    // if (key.keycode == "87"){
-    //     alert("the key w has been pressed")
-    // }
-    //if (key.keycode == "65"){
-       // alert("the key a has been pressed")
-   // }
-    //if (key.keycode == "83"){
-        //alert("the key s has been pressed")
-    //}
-    //if (key.keycode == "68"){
-       // alert("the key d has been pressed")
-    //}
+
+var acc = 0;
+var brake = 0;
+var steer = 0;
+
+function updateScreen(){
+    a = document.getElementById("acc");
+    b = document.getElementById("brake");
+    c = document.getElementById("steer");
+    a.innerHTML = "acc:"+String(acc);
+    b.innerHTML = "brake:"+String(brake);
+    c.innerHTML = "steer:"+String(steer);
+}
+
+window.addEventListener('keydown', checkKeyPressDown,false);
+function checkKeyPressDown(key){
+    console.log(key)
+    console.log('keydown');
+   
+    if (key.key == 'w') {
+        acc = 1
+        //console.log("keyW")
+        updateScreen()
+    }
+    if (key.key == 'a') {
+        steer = 'left'
+        //console.log("keyA")
+        updateScreen()
+    }
+    if (key.key == 's') {
+        brake = 1
+        //console.log("keyS")
+        updateScreen()
+    }
+    if (key.key == 'd') {
+        steer = 'right'
+        //console.log("keyD")
+        updateScreen()
+    }
 
 
 }
 
+window.addEventListener('keyup', checkKeyPressUp,false);
+
+function checkKeyPressUp(key){
+    //console.log(key);
+    console.log('keylifted');
+    if (key.key == "w") {
+        acc = 0
+       // console.log("keyW")
+       updateScreen()
+    }
+    if (key.key == "a") {
+        steer = 0;
+       // console.log("keyA")
+       updateScreen()
+    }
+    if (key.key == "s") {
+        brake = 0;
+       // console.log("keyS")
+       updateScreen()
+    }
+    if (key.key == "d") {
+        steer = 0;
+        //console.log("keyD")
+        updateScreen()
+    }
+
+
+
+}
 
